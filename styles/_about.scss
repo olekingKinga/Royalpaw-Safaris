@@ -1,0 +1,142 @@
+.about {
+    min-height: 80vh;
+    width: 95%;
+    margin: auto;
+    @include flex(center, center, row);
+    flex-wrap: wrap;
+    margin: 3rem;
+}
+.about h2 {
+  padding: 2rem 0rem;
+  text-align: center
+}
+.about-header header {
+  @include flex(center, center, column);
+  background-image: url('../images/RoyalPawSafaris.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 15vh;
+  text-align: center;
+  color: $white;
+}
+.about-header header p{
+  padding: 1rem 0rem;
+}
+.about-sec2 {
+  width: 90%;
+  margin: auto;
+  @include flex(center, center, row);
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+.sec2-one,
+.sec2-two,
+.sec2-three {
+  flex: 1 1 30rem;
+  margin: 0rem 2rem;
+}
+.sec2-one h3,
+.sec2-two h3,
+.sec2-three h3 {
+  text-align: center;
+  color: $secondary;
+  padding: 2rem 0rem;
+}
+
+.about-text h2 {
+    padding: 2rem;
+    font-size: $header2;
+    text-align: center;
+}
+.about-text p {
+    padding: 3rem;
+}
+.about-text button {
+    font-size: $header3;
+    color: $primary;
+}
+
+
+
+/* Collapsible Content */
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 1.8rem;
+    width: 98%;
+    margin: auto;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.6rem;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 0.3rem;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+
+  .content {
+    padding: 0 1.8rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+  }
+
+  /* ABOUT BOOKING SECTION */
+  .abt-book {
+    min-height: 30vh;
+    background-image: url("/images/lion.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include flex(center, center, column);
+    text-align: center;
+    color: $white;
+  }
+  .abt-book-header h2 {
+    padding: 1rem;
+  }
+  .abt-book-header h3 {
+    padding: 2rem;
+  }
+  .abt-book-header h4 {
+    padding: 1rem;
+  }
+  .abt-book-header button {
+    padding: 2rem 6rem;
+    background: $primary;
+    border: none;
+    color: $secondary;
+    font-size: 1.8rem;
+    cursor: pointer;
+    border-radius: 2rem;
+    transition: background 0.5s ease-in-out 0.3s;
+    animation: cloudAnimation 2s infinite alternate 1s;
+    margin-bottom: 2rem;
+}
+
+.abt-book-header button {
+  text-decoration: none;
+  color: $white;
+}
+.abt-book-header button a:hover {
+    background: #7b97b9;
+}
+
+  

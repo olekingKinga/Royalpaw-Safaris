@@ -1,0 +1,142 @@
+/* CONTACT SECTION*/
+#contact {
+    min-height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: $primary-font-family;
+}
+.contact {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), transparent), url('../images/RoyalPawSafaris.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-height: 32vh;
+    color: $white;
+}
+.contact header {
+    text-align: center;
+    padding: 1rem 0rem;
+}
+
+.contact-text{
+    @include flex(center, space-around, row);
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 2rem 3rem;
+    text-align: center;
+}
+.cotext1 {
+    flex: 1 1 40rem;
+}
+.cotext2 {
+    flex: 1 1 40rem;
+}
+
+
+
+
+.form-wrapper {
+    @include flex(center, center, column);
+    flex: 1 1 40rem;
+    margin-right: 3rem;
+}
+.form-wrapper h2 {
+    margin: 5rem 0rem;
+}
+.form-wrapper span {
+    font-size: $big;
+    color: $special-color;
+}
+.form-wrapper form {
+    padding: 3rem 10rem;
+    box-shadow: 0px 10px 10px rgba($color: #000000, $alpha: 0.2), 
+    0px 20px 40px rgba($color: #000000, $alpha: 0.2);
+    @include flex(center, center, column);
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+}
+.form-wrapper input, textarea {
+    margin: 0.5rem;
+    &:focus {
+        outline: 2px solid $white;
+    }
+}
+.form-wrapper textarea {
+    font-family: $primary-font-family;
+    font-size: 2rem;
+}
+.form-wrapper input {
+    font-family: $primary-font-family; 
+}
+.form-wrapper button {
+    width: 100%;
+    padding: 2rem;
+    background: $background-color;
+    color: $white;
+    cursor: pointer;
+    border-radius: 10rem;
+    &:hover {
+        background: $secondary;
+        color: $primary;
+    }
+}
+.contact-image {
+    flex: 1 1 40rem;
+}
+.contact-image svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#Office-phone {
+    animation: phone 5s infinite alternate linear ;
+}
+
+#Cell-phone {
+    animation: cell 4s infinite alternate linear;
+}
+#Head {
+    animation: head 1.5s infinite alternate linear;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+#Envelop {
+    animation: envelop 2.5s infinite alternate linear;
+    transform-origin: bottom;
+}
+
+@keyframes phone {
+    from{
+        transform: translateX(-47%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes cell {
+    from{
+        transform: translateY(60%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+
+@keyframes head {
+    from {
+        transform: rotateZ(-5deg);
+    }
+    to {
+        transform: rotateZ(5deg);
+    }
+}
+
+@keyframes envelop {
+    from {
+        transform: rotateY(-17deg);
+    }
+    to {
+        transform: rotateY(17deg);
+    }
+}

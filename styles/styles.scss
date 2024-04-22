@@ -1,0 +1,422 @@
+$header1: 3.0rem;
+$header2: 2.8rem;
+$header3: 2.0rem;
+$header4: 1.8rem;
+$text: 2.0rem;
+$primary-font-family: 'Nanum Gothic', sans-serif;
+$secondary-font-family: 'EB Garamond', serif;
+$special-font-family: 'Great Vibes', cursive;
+$big: calc(6rem + 1vw);
+$big-phn: calc(4rem + 1vw);
+$primary: #f6b551;
+$secondary: #331714;
+$background-color: #e5872f;
+$gray-text: #2c2c2c;
+$black: #000000;
+$white: #ffffff;
+$special-color: #efce43;
+$gradient: radial-gradient(circle, rgba(255,179,0,1) 0%, rgba(0,70,141,1) 6%, rgba(255,179,0,1) 14%, rgba(0,70,141,1) 47%);
+
+@mixin flex($align, $justify, $direction) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+}
+
+/*Load All the Import Files*/
+@import "global";
+@import "intro";
+@import "about";
+@import "contact";
+@import "kenya-tanzania";
+@import "programs";
+@import "eaf-programs.scss";
+@import "footer";
+
+@media screen and (max-width: 1332px) {
+    html {
+        font-size: 53%;
+    }
+    nav {
+        width: 100%;
+    }
+    nav img {
+        width: 45%;
+        height: 45%;
+    }
+}
+
+
+/*ADDING MEDIA QUERY - MOBILE VIEW OPTIMIZATION */
+@media screen and (max-width: 842px) {
+    /* INTRO SECTION */
+    .hero {
+        width: 100%;
+    }
+    .hero-introduction p {
+        padding: 5rem 3rem;
+    }
+    .hero-images {
+        margin-top: 5rem;
+    }
+
+
+    /* Hamburger Mobile Responsive CSS THING*/
+    .burger {
+        position: relative;
+        display: block;
+        cursor: pointer;
+        margin-right: 2rem;
+    }
+    .burger span {
+        padding: 0.2rem 2rem;
+        background: $gray-text;
+        margin: 0.5rem 0rem;
+        display: block;
+        transition: all 0.5s ease;
+    }
+    .dropbtn {
+        background: $primary;
+      
+    }
+    .dropdown-content a {
+        padding: 1.0rem;
+    }
+    .nav-links a, .dropbtn {
+        color: white;
+        font-size: $header2;
+        text-decoration: underline;
+        
+    }
+    .nav-links {
+        background: $primary;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 100%;
+        @include flex(center, space-around, column);
+        transition: transform 1s ease;
+    }
+    
+    .nav-open { 
+        transform: translateX(-100%);
+    }
+    .toggle .line1 {
+        transform: rotateZ(45deg) translateY(300%);
+        background: #ffffff;
+    }
+    .toggle .line2 {
+        opacity: 0;
+    }
+    .toggle .line3 {
+        transform: rotateZ(-45deg) translateY(-300%);
+        background: #ffffff;
+    }
+    form {
+        padding: 0rem;
+        width: 100%;
+    }
+
+    .logo { 
+        @include flex(center, center, column);
+        
+     }
+    
+     .logo img {
+        display: none;
+     }
+     .logo h1 {
+        color: $secondary;
+        flex: 1 1 12rem;
+        align-items: center;
+        padding: 1.2rem 0rem;
+        font-size: 2.8rem;
+        display: block;
+        font-family: $special-font-family;
+     }
+
+     .benefit-head {
+        line-height: 3.8rem;
+     }
+     .benefit-head h2 {
+        color: $primary;
+     }
+     .benefit-head h4 {
+        padding: 2.4rem 0rem;
+        color: $secondary;
+        font-size: 2.8rem;
+     }
+
+     //LOCATION SECTION 
+     .location-head {
+        width: 100%;
+     }
+     .location-head h2 {
+        padding: 2rem 3rem;
+        font-size: 2.8rem;
+        text-align: center;
+        text-decoration-thickness: 0.2rem;
+     }
+     .location-head h3 {
+        padding: 1rem 2rem;
+        text-align: center;
+        font-size: 2.4rem;
+     }
+     .cloud {
+        right: 10%;
+     }
+     
+     // CARD SECTION 
+     .cards {
+        width: 100%;
+        margin: auto;
+     }
+     .card {
+        margin: 2rem 3rem;
+        transition: all 2s linear;
+     }
+
+     //CARDR3 SECTION
+     .cardr3 {
+        width: 94%;
+        margin: auto;
+     }
+     .cardr3-text {
+        line-height: 3.6rem;
+        text-align: start;
+        order: 2;
+     }
+     .cardr3-text p {
+        padding: 2rem;
+     }
+     .cardr3-img {
+        order: 1;
+     }
+     .cardr3-text h2 {
+      text-align: center;
+     }
+     .cardr3-text h2 a{
+      font-size: 3.0rem;
+
+     }
+
+     //CONTACT SECTION 
+     .form-wrapper {
+        flex: 1 1 40rem;
+        order: 2;
+        text-align: center;
+        width: 80%;
+        margin: auto;
+        
+     }
+
+     .form-wrapper h2 {
+        margin: 3rem 0rem;
+     }
+     .form-wrapper form {
+        padding: 2rem;
+     }
+     .form-wrapper text-areaa {
+        font-size: 1rem;
+        width: 90%;
+        margin: auto;
+     }
+     .form-wrapper input {
+        width: 98%;
+        margin: 1rem auto;
+
+     }
+     .form-wrapper button {
+        padding: 1rem;
+        width: 80%;
+     }
+
+     .contact-image {
+        flex: 1 1 40rem;
+        order: 1;
+        width: 85%;
+        height: 85%;
+        margin: 2rem;
+     }
+
+     .contact header h2 {
+        font-size: 2.8rem;
+        padding: 0.5rem;
+     }
+     .contact-text h3{
+        font-size: 1.8rem; 
+     }
+
+     //ABOUT US PAGE 
+     .abt-book-header button {
+        padding: 1rem 3rem;
+     }
+     .collapsible {
+        width: 95%;
+        margin: auto;
+        margin-right: 2rem;
+     }
+
+     //PROGRAM'S HEADER PART
+     .kenya-tanzania-head h2 {
+      padding: 1rem;
+      font-size: $header3;
+     }
+     .kenya-tanzania-head h3 {
+      padding: 0rem;
+      color: $white;
+     }
+     .kenya-tanzania-head h4 {
+      width: 100%;
+      padding: 1rem 2rem;
+     }
+
+     //PROGRAM - COLLECTIONS PAGE
+     .program {
+      width: 100%;
+      margin: auto;
+      padding: 2rem;
+     }
+     .program-text p{
+      padding: 2rem;
+     }
+     .program-text h4 {
+      padding: 2rem;
+      margin-left: 2rem;
+     }
+     .ptext {
+      order: 2;
+     }
+     .pimage {
+      order: 1;
+     }
+
+
+     //PROGRAMS - SINGLE SELECTION
+     .programs {
+      width: 100%;
+      padding: 1.8rem 3rem;
+     }
+     .pro-text h3 {
+      padding: 1.2rem 0rem;
+      color: $secondary;
+     }
+     .pro-footer {
+      @include flex(start, space-around, column);
+      padding: 2rem;
+      h4 {
+         padding: 0.5rem 0rem;
+      }
+     }
+
+     .cheeter {
+      background-size: cover;
+      background-position: center;
+     }
+
+     // END CONTENT FOOTER FOR PROGRAM 
+     .programs-end {
+      padding: 1rem 2rem;
+     }
+     .end-content {
+      padding: 2rem 0rem;
+     }
+     .end-content h4 {
+      color: $secondary;
+      padding: 2rem;
+     }
+     .end-content ul li {
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+     }
+     .end-header h3 {
+      font-size: 2.0rem;
+     }
+     .end-header h4 {
+      font-size: 1.6rem;
+      font-weight: 400;
+      font-style: italic;
+     }
+
+     // EA FAMILIES PROGRAMS 
+     .eaf-head h2 {
+      font-size: 3.2rem;
+     }
+     .eaf-head h3 {
+      font-size: 2.0rem;
+      padding: 0.6rem 0rem;
+     }
+     .eafhm {
+      width: 100%;
+      padding: 1rem 3rem;
+     }
+     .eafhm-text h2 {
+      margin-bottom: 2rem;
+     }
+     .eafhm-text h2 a {
+      font-size: 2.4rem;
+      padding: 2rem 0rem;
+
+     }
+     .eafhm-text p{
+      padding: 0rem;
+      text-align: start;
+     }
+     .eafhm-text h4 {
+      padding: 2rem 3rem;
+     }
+     .eafhm-text h4 a {
+      color: $secondary;
+     }
+
+     //FOOTER SECTION 
+     footer .text1, 
+     footer .text2,
+     footer .text3,
+     footer .text4,
+     footer .text5 {
+        text-align: center;
+     }
+     footer .text1 h3, 
+     footer .text2 h3,
+     footer .text3 h3,
+     footer .text4 h3,
+     footer .text5 h3 {
+        font-size: 2.0rem;
+     }
+     footer .text1 li a, 
+     footer .text2 li a,
+     footer .text3 li a,
+     footer .text4 li a,
+     footer .text5 li a{
+        font-size: 1.8rem;
+     }
+     .icons {
+      @include flex (center, space-around, row);
+     }
+     .icons img {
+      padding: 0rem 2rem;
+     }
+
+     //TERMS BELOW FOOTER SECTION 
+     .terms {
+        text-align: center;
+     }
+     .terms h4 {
+      font-size: 1.8rem;
+     }
+     .terms h4 a{
+      font-size: 1.6rem;
+     }
+
+     @keyframes cloudAnimate {
+        from {
+            transform: translate(40%, -42%);
+        }
+        to {
+            transform: translate(0%, 0%);
+        }
+     }
+}

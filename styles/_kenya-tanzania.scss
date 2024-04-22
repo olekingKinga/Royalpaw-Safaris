@@ -1,0 +1,112 @@
+.kenya-tanzania-head {
+    min-height: 20vh;
+    background-image: url('/images/RoyalPawSafaris.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include flex(center, center, column);
+    flex-wrap: wrap;
+    text-align: center;
+    opacity: 0.7;
+}
+.kenya-tanzania-head h2 {
+    padding: 1.6rem 0rem;
+    font-size: $header2;
+    color: $white;
+    font-family: $special-font-family;
+    font-weight: 700;
+}
+.kenya-tanzania-head h3 {
+    padding: 0.5rem;
+    color: $white;
+    font-size: $header3;
+    font-family: $secondary-font-family;
+}
+.kenya-tanzania-head h4 {
+    width: 90%;
+    margin: auto;
+    padding: 1rem 3rem;
+    color: $white;
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 2.4rem;
+    font-weight: 600;
+    z-index: 50;
+}
+
+//PROGRAM SECTION PART
+.program {
+    min-height: 70vh;
+    width: 90%;
+    margin: 1rem auto;
+    @include flex(center, center, row);
+    flex-wrap: wrap;
+}
+.program-text {
+    flex: 2 1 40rem;
+    text-align: start;
+}
+.program-text h3 {
+    padding-top: 3rem;
+    font-size: $header3;
+    color: $secondary;
+    text-align: center;
+}
+.program-text h3 a{
+    text-decoration: none;
+    color: $secondary;
+}
+.program-text h3 a:hover {
+    color: $primary;
+}
+.program-text p {
+    padding: 5rem 10rem;
+}
+.program-text h4 {
+    text-align: start;
+    margin-left: 10rem;
+}
+.program-text h4 a{
+    text-decoration: none;
+}
+.program-text h4 a:hover{
+    color: $secondary;
+}
+.pro-img-one {
+    height: 50vh;
+    background-image: url("../images/eka-hotel.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    flex: 1 1 40rem;
+}
+.pro-img-two {
+    height: 50vh;
+    background-image: url("../images/program2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    flex: 1 1 40rem;
+}
+.pro-img-three {
+    height: 50vh;
+    background-image: url("../images/program3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    flex: 1 1 40rem;
+}
+
+.program-img {
+    flex: 1 1 40rem;
+    background: linear-gradient(#dad8dd, #dad1d4);
+}
+
+.program-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

@@ -1,0 +1,1478 @@
+@charset "UTF-8";
+/*Load All the Import Files*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "EB Garamond", serif;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: "Vibes", sans-serif;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4, h5 {
+  font-size: 1.8rem;
+}
+
+ul {
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000000;
+}
+
+li,
+button,
+label,
+input,
+a,
+p {
+  font-size: 2rem;
+}
+
+.active {
+  background: #331714;
+  color: #f6b551;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+}
+
+/* HEADER NAV - SECTION */
+.main-head {
+  background: #f6b551;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.6);
+  position: sticky;
+  top: 0px;
+  z-index: 5;
+}
+
+nav {
+  width: 100%;
+  margin: auto;
+  max-height: 12vh;
+  display: flex;
+  align-items: center;
+  padding: 2rem 0rem;
+}
+
+#logo {
+  display: flex;
+  flex: 1 1 20rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  max-height: 12vh;
+}
+
+.logo img {
+  flex: 1 1 10rem;
+}
+
+.logo h1 {
+  color: #ffffff;
+  flex: 3 1 60rem;
+  font-size: 2.4rem;
+  display: none;
+}
+
+#logo a img {
+  width: 18%;
+  margin-left: 4rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  flex: 2 1 40rem;
+}
+
+/* DROP DOWN MENU*/
+.dropbtn {
+  border: none;
+  cursor: pointer;
+  background: none;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #331714;
+  min-width: 20rem;
+  box-shadow: 0px 8px 16px 0px rgba(4, 4, 4, 0.3);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #f6b551;
+  padding: 1rem;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background: #f6b551;
+  color: #331714;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  opacity: 0.8;
+}
+
+.dropdown:hover .dropbtn {
+  background: #f6b551;
+  color: #331714;
+}
+
+/* BUTTON STYLING */
+.button {
+  padding: 2rem 6rem;
+  background: #f6b551;
+  border: none;
+  color: #331714;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: backgroung 0.5s ease-in-out 0.3s;
+  animation: cloudAnimation 2s infinite alternate 1s;
+}
+
+button:hover {
+  background: #7b97b9;
+}
+
+/* END OF NAV DROP DOWN */
+/* SLIDER SECTION START */
+.slider {
+  min-height: 60vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), transparent), url("/images/lion.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* END OF SLIDER SECTION*/
+/* --HERO SECTION --*/
+.hero {
+  min-height: 80vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), transparent), url("/images/air_baloon_mara.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero h3 {
+  padding: 5rem;
+}
+
+/* LOCATION SECTION START*/
+.location {
+  min-height: 64vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), transparent), url("/images/slider/banner2.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.location-head {
+  width: 90%;
+  margin: auto;
+}
+
+.location-head h2 {
+  padding: 1rem 0rem;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5rem;
+}
+
+.location-head h3 {
+  padding: 4rem 0rem;
+}
+
+.cloud {
+  position: absolute;
+  bottom: 20%;
+  right: 30%;
+}
+
+.moving-cloud-1 {
+  opacity: 0.8;
+  animation: cloudAnimate 12s infinite alternate ease-in-out;
+}
+
+/* BENEFIT HEAD - SECTION */
+.benefit-head {
+  background: #343c44;
+  padding: 3rem;
+  min-height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #ffffff;
+  text-align: center;
+}
+
+.benefit-head h3 {
+  padding: 1.4rem;
+}
+
+.benefit-head h4 {
+  color: #f6b551;
+  font-size: 2.4rem;
+}
+
+.cards {
+  width: 96%;
+  margin: auto;
+  min-height: 70vh;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  min-height: 40vh;
+  text-align: center;
+  flex: 1 1 30rem;
+  margin: 2rem 5rem;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 3s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px, inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-text {
+  padding: 2rem;
+  line-height: 3.6rem;
+}
+
+.card-text h4 {
+  font-size: 2rem;
+  padding: 2rem;
+  transition: transform 2s ease-in-out;
+}
+
+.card-text h4:hover {
+  transform: scale(1.25);
+}
+
+.card-text h4 a {
+  text-decoration: none;
+  color: #f6b551;
+}
+
+.card-text h4 a:hover {
+  color: #331714;
+  transform: scale(1.2);
+}
+
+.cardr3 {
+  min-height: 70vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.cardr3-text {
+  flex: 2 1 40rem;
+  text-align: center;
+}
+
+.cardr3-text p {
+  padding: 5rem 10rem;
+}
+
+.cardr3-text h2 {
+  padding-top: 3rem;
+}
+
+.cardr3-text h2 a {
+  color: #f6b551;
+  text-decoration: none;
+  font-size: 2.8rem;
+}
+
+.cardr3-img {
+  flex: 1 1 40rem;
+  background: linear-gradient(#dad8dd, #dad1d4);
+}
+
+.cheeter {
+  height: 54vh;
+  background-image: url("../images/honeymoon4.jpg");
+  background-size: 70%;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  flex: 2 1 40rem;
+}
+
+.cardr3-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* KEY FRAMES - BUTTON */
+@keyframes cloudAnimation {
+  0% {
+    background: #f6b551;
+  }
+  50% {
+    background: #331714;
+  }
+}
+@keyframes cloudAnimate {
+  from {
+    transform: translate(50%, -44%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+.about {
+  min-height: 80vh;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 3rem;
+}
+
+.about h2 {
+  padding: 2rem 0rem;
+  text-align: center;
+}
+
+.about-header header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("../images/RoyalPawSafaris.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 15vh;
+  text-align: center;
+  color: #ffffff;
+}
+
+.about-header header p {
+  padding: 1rem 0rem;
+}
+
+.about-sec2 {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.sec2-one,
+.sec2-two,
+.sec2-three {
+  flex: 1 1 30rem;
+  margin: 0rem 2rem;
+}
+
+.sec2-one h3,
+.sec2-two h3,
+.sec2-three h3 {
+  text-align: center;
+  color: #331714;
+  padding: 2rem 0rem;
+}
+
+.about-text h2 {
+  padding: 2rem;
+  font-size: 2.8rem;
+  text-align: center;
+}
+
+.about-text p {
+  padding: 3rem;
+}
+
+.about-text button {
+  font-size: 2rem;
+  color: #f6b551;
+}
+
+/* Collapsible Content */
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 1.8rem;
+  width: 98%;
+  margin: auto;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1.6rem;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: "+";
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 0.3rem;
+}
+
+.active:after {
+  content: "−";
+}
+
+.content {
+  padding: 0 1.8rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+/* ABOUT BOOKING SECTION */
+.abt-book {
+  min-height: 30vh;
+  background-image: url("/images/lion.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: #ffffff;
+}
+
+.abt-book-header h2 {
+  padding: 1rem;
+}
+
+.abt-book-header h3 {
+  padding: 2rem;
+}
+
+.abt-book-header h4 {
+  padding: 1rem;
+}
+
+.abt-book-header button {
+  padding: 2rem 6rem;
+  background: #f6b551;
+  border: none;
+  color: #331714;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border-radius: 2rem;
+  transition: background 0.5s ease-in-out 0.3s;
+  animation: cloudAnimation 2s infinite alternate 1s;
+  margin-bottom: 2rem;
+}
+
+.abt-book-header button {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.abt-book-header button a:hover {
+  background: #7b97b9;
+}
+
+/* CONTACT SECTION*/
+#contact {
+  min-height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.contact {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), transparent), url("../images/RoyalPawSafaris.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-height: 32vh;
+  color: #ffffff;
+}
+
+.contact header {
+  text-align: center;
+  padding: 1rem 0rem;
+}
+
+.contact-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 2rem 3rem;
+  text-align: center;
+}
+
+.cotext1 {
+  flex: 1 1 40rem;
+}
+
+.cotext2 {
+  flex: 1 1 40rem;
+}
+
+.form-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1 1 40rem;
+  margin-right: 3rem;
+}
+
+.form-wrapper h2 {
+  margin: 5rem 0rem;
+}
+
+.form-wrapper span {
+  font-size: calc(6rem + 1vw);
+  color: #efce43;
+}
+
+.form-wrapper form {
+  padding: 3rem 10rem;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 20px 40px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+}
+
+.form-wrapper input, textarea {
+  margin: 0.5rem;
+}
+.form-wrapper input:focus, textarea:focus {
+  outline: 2px solid #ffffff;
+}
+
+.form-wrapper textarea {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 2rem;
+}
+
+.form-wrapper input {
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.form-wrapper button {
+  width: 100%;
+  padding: 2rem;
+  background: #e5872f;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 10rem;
+}
+.form-wrapper button:hover {
+  background: #331714;
+  color: #f6b551;
+}
+
+.contact-image {
+  flex: 1 1 40rem;
+}
+
+.contact-image svg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#Office-phone {
+  animation: phone 5s infinite alternate linear;
+}
+
+#Cell-phone {
+  animation: cell 4s infinite alternate linear;
+}
+
+#Head {
+  animation: head 1.5s infinite alternate linear;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+#Envelop {
+  animation: envelop 2.5s infinite alternate linear;
+  transform-origin: bottom;
+}
+
+@keyframes phone {
+  from {
+    transform: translateX(-47%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+@keyframes cell {
+  from {
+    transform: translateY(60%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+@keyframes head {
+  from {
+    transform: rotateZ(-5deg);
+  }
+  to {
+    transform: rotateZ(5deg);
+  }
+}
+@keyframes envelop {
+  from {
+    transform: rotateY(-17deg);
+  }
+  to {
+    transform: rotateY(17deg);
+  }
+}
+.kenya-tanzania-head {
+  min-height: 20vh;
+  background-image: url("/images/RoyalPawSafaris.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.kenya-tanzania-head h2 {
+  padding: 1.6rem 0rem;
+  font-size: 2.8rem;
+  color: #ffffff;
+  font-family: "Great Vibes", cursive;
+  font-weight: 700;
+}
+
+.kenya-tanzania-head h3 {
+  padding: 0.5rem;
+  color: #ffffff;
+  font-size: 2rem;
+  font-family: "EB Garamond", serif;
+}
+
+.kenya-tanzania-head h4 {
+  width: 90%;
+  margin: auto;
+  padding: 1rem 3rem;
+  color: #ffffff;
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 2.4rem;
+  font-weight: 600;
+  z-index: 50;
+}
+
+.program {
+  min-height: 70vh;
+  width: 90%;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.program-text {
+  flex: 2 1 40rem;
+  text-align: start;
+}
+
+.program-text h3 {
+  padding-top: 3rem;
+  font-size: 2rem;
+  color: #331714;
+  text-align: center;
+}
+
+.program-text h3 a {
+  text-decoration: none;
+  color: #331714;
+}
+
+.program-text h3 a:hover {
+  color: #f6b551;
+}
+
+.program-text p {
+  padding: 5rem 10rem;
+}
+
+.program-text h4 {
+  text-align: start;
+  margin-left: 10rem;
+}
+
+.program-text h4 a {
+  text-decoration: none;
+}
+
+.program-text h4 a:hover {
+  color: #331714;
+}
+
+.pro-img-one {
+  height: 50vh;
+  background-image: url("../images/eka-hotel.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  flex: 1 1 40rem;
+}
+
+.pro-img-two {
+  height: 50vh;
+  background-image: url("../images/program2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  flex: 1 1 40rem;
+}
+
+.pro-img-three {
+  height: 50vh;
+  background-image: url("../images/program3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  flex: 1 1 40rem;
+}
+
+.program-img {
+  flex: 1 1 40rem;
+  background: linear-gradient(#dad8dd, #dad1d4);
+}
+
+.program-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.programs {
+  min-height: 40vh;
+  width: 90%;
+  margin: auto;
+  padding: 3rem 6rem;
+}
+
+.pro-text {
+  padding: 1rem 0rem;
+}
+
+.pro-img {
+  padding: 1rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.pro-img1 {
+  flex: 1 1 30rem;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+}
+
+.pro-img2 {
+  flex: 1 1 30rem;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+.pro-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.pro-footer {
+  min-height: 10vh;
+  background: #331714;
+  color: #f6b551;
+  padding: 2rem 3rem;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1 1 30rem;
+}
+
+.pro-footer span {
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+
+.programs-end {
+  width: 100%;
+  margin: auto;
+  background: #a09292;
+  padding: 3rem 6rem;
+}
+
+.end-header {
+  text-align: center;
+}
+
+.end-header h3 {
+  padding: 2rem 0rem;
+}
+
+.end-content {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2rem 5rem;
+}
+
+.end-one {
+  flex: 1 1 40rem;
+  margin-right: 3rem;
+}
+
+.end-two {
+  flex: 1 1 40rem;
+}
+
+.eaf-head {
+  min-height: 20vh;
+  background-image: url("/images/RoyalPawSafaris.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.eaf-head h2 {
+  padding: 1rem 3rem;
+  color: #ffffff;
+  font-family: "Great Vibes", cursive;
+}
+
+.eaf-head h3 {
+  padding: 1rem 3rem;
+  color: #ffffff;
+}
+
+.eafhm {
+  min-height: 70vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.eafhm-text {
+  flex: 2 1 40rem;
+  text-align: center;
+}
+
+.eafhm-text p {
+  padding: 5rem 10rem;
+}
+
+.eafhm-text h2 a {
+  padding-top: 3rem;
+  color: #331714;
+  text-decoration: none;
+  font-size: 3.6rem;
+}
+
+.eafhm-text h2 a:hover {
+  color: #f6b551;
+}
+
+.eafhm-text h4 a {
+  text-decoration: none;
+}
+
+.eafhm-text h4 a:hover {
+  color: #f6b551;
+}
+
+.eafhm-img {
+  flex: 1 1 40rem;
+  background: linear-gradient(#dad8dd, #dad1d4);
+}
+
+.eafhm-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.footer {
+  background: #331714;
+  padding: 2rem 4rem;
+  align-items: center;
+  color: #ffffff;
+  font-size: calc(1rem + 1vw);
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer a:hover {
+  color: #f6b551;
+}
+
+.footer div {
+  margin: 0.5rem 1.8rem;
+  text-align: start;
+}
+
+footer h3 {
+  color: #f6b551;
+  font-size: 2rem;
+  padding: 2rem 0rem;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-thickness: 0.3rem;
+  text-decoration-color: #331714;
+}
+
+footer .text1 {
+  flex: 2 1 35rem;
+  margin-top: 1rem;
+  line-height: 3.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+footer .text2 {
+  flex: 1 1 35rem;
+  margin-top: 1rem;
+  line-height: 3.8rem;
+  text-align: center;
+}
+
+footer .text3 {
+  flex: 1 1 35rem;
+  margin-top: 1rem;
+  line-height: 3.8rem;
+  text-align: center;
+}
+
+.text2 li {
+  transition: transform 3s linear;
+}
+
+.text2 li:hover {
+  transform: scale(1.2);
+}
+
+.text3 li {
+  transition: transform 3s linear;
+}
+
+.text3 li:hover {
+  cursor: pointer;
+  transform: scale(1.2s);
+}
+
+footer .text1 img {
+  top: 0;
+  width: 30%;
+  height: 30%;
+  margin: 2rem;
+}
+
+.terms {
+  min-height: 10vh;
+  background: #000000;
+  color: #f6b551;
+  padding: 1rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.terms a {
+  color: #f6b551;
+  text-decoration: none;
+}
+
+.foot1 {
+  flex: 1 1 40rem;
+  margin: 1rem 0rem;
+}
+
+.foot2 {
+  flex: 1 1 40rem;
+}
+
+@media screen and (max-width: 1332px) {
+  html {
+    font-size: 53%;
+  }
+  nav {
+    width: 100%;
+  }
+  nav img {
+    width: 45%;
+    height: 45%;
+  }
+}
+/*ADDING MEDIA QUERY - MOBILE VIEW OPTIMIZATION */
+@media screen and (max-width: 842px) {
+  /* INTRO SECTION */
+  .hero {
+    width: 100%;
+  }
+  .hero-introduction p {
+    padding: 5rem 3rem;
+  }
+  .hero-images {
+    margin-top: 5rem;
+  }
+  /* Hamburger Mobile Responsive CSS THING*/
+  .burger {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    margin-right: 2rem;
+  }
+  .burger span {
+    padding: 0.2rem 2rem;
+    background: #2c2c2c;
+    margin: 0.5rem 0rem;
+    display: block;
+    transition: all 0.5s ease;
+  }
+  .dropbtn {
+    background: #f6b551;
+  }
+  .dropdown-content a {
+    padding: 1rem;
+  }
+  .nav-links a, .dropbtn {
+    color: white;
+    font-size: 2.8rem;
+    text-decoration: underline;
+  }
+  .nav-links {
+    background: #f6b551;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    transition: transform 1s ease;
+  }
+  .nav-open {
+    transform: translateX(-100%);
+  }
+  .toggle .line1 {
+    transform: rotateZ(45deg) translateY(300%);
+    background: #ffffff;
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }
+  .toggle .line3 {
+    transform: rotateZ(-45deg) translateY(-300%);
+    background: #ffffff;
+  }
+  form {
+    padding: 0rem;
+    width: 100%;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .logo img {
+    display: none;
+  }
+  .logo h1 {
+    color: #331714;
+    flex: 1 1 12rem;
+    align-items: center;
+    padding: 1.2rem 0rem;
+    font-size: 2.8rem;
+    display: block;
+    font-family: "Great Vibes", cursive;
+  }
+  .benefit-head {
+    line-height: 3.8rem;
+  }
+  .benefit-head h2 {
+    color: #f6b551;
+  }
+  .benefit-head h4 {
+    padding: 2.4rem 0rem;
+    color: #331714;
+    font-size: 2.8rem;
+  }
+  .location-head {
+    width: 100%;
+  }
+  .location-head h2 {
+    padding: 2rem 3rem;
+    font-size: 2.8rem;
+    text-align: center;
+    text-decoration-thickness: 0.2rem;
+  }
+  .location-head h3 {
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 2.4rem;
+  }
+  .cloud {
+    right: 10%;
+  }
+  .cards {
+    width: 100%;
+    margin: auto;
+  }
+  .card {
+    margin: 2rem 3rem;
+    transition: all 2s linear;
+  }
+  .cardr3 {
+    width: 94%;
+    margin: auto;
+  }
+  .cardr3-text {
+    line-height: 3.6rem;
+    text-align: start;
+    order: 2;
+  }
+  .cardr3-text p {
+    padding: 2rem;
+  }
+  .cardr3-img {
+    order: 1;
+  }
+  .cardr3-text h2 {
+    text-align: center;
+  }
+  .cardr3-text h2 a {
+    font-size: 3rem;
+  }
+  .form-wrapper {
+    flex: 1 1 40rem;
+    order: 2;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+  }
+  .form-wrapper h2 {
+    margin: 3rem 0rem;
+  }
+  .form-wrapper form {
+    padding: 2rem;
+  }
+  .form-wrapper text-areaa {
+    font-size: 1rem;
+    width: 90%;
+    margin: auto;
+  }
+  .form-wrapper input {
+    width: 98%;
+    margin: 1rem auto;
+  }
+  .form-wrapper button {
+    padding: 1rem;
+    width: 80%;
+  }
+  .contact-image {
+    flex: 1 1 40rem;
+    order: 1;
+    width: 85%;
+    height: 85%;
+    margin: 2rem;
+  }
+  .contact header h2 {
+    font-size: 2.8rem;
+    padding: 0.5rem;
+  }
+  .contact-text h3 {
+    font-size: 1.8rem;
+  }
+  .abt-book-header button {
+    padding: 1rem 3rem;
+  }
+  .collapsible {
+    width: 95%;
+    margin: auto;
+    margin-right: 2rem;
+  }
+  .kenya-tanzania-head h2 {
+    padding: 1rem;
+    font-size: 2rem;
+  }
+  .kenya-tanzania-head h3 {
+    padding: 0rem;
+    color: #ffffff;
+  }
+  .kenya-tanzania-head h4 {
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+  .program {
+    width: 100%;
+    margin: auto;
+    padding: 2rem;
+  }
+  .program-text p {
+    padding: 2rem;
+  }
+  .program-text h4 {
+    padding: 2rem;
+    margin-left: 2rem;
+  }
+  .ptext {
+    order: 2;
+  }
+  .pimage {
+    order: 1;
+  }
+  .programs {
+    width: 100%;
+    padding: 1.8rem 3rem;
+  }
+  .pro-text h3 {
+    padding: 1.2rem 0rem;
+    color: #331714;
+  }
+  .pro-footer {
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .pro-footer h4 {
+    padding: 0.5rem 0rem;
+  }
+  .cheeter {
+    background-size: cover;
+    background-position: center;
+  }
+  .programs-end {
+    padding: 1rem 2rem;
+  }
+  .end-content {
+    padding: 2rem 0rem;
+  }
+  .end-content h4 {
+    color: #331714;
+    padding: 2rem;
+  }
+  .end-content ul li {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+  .end-header h3 {
+    font-size: 2rem;
+  }
+  .end-header h4 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-style: italic;
+  }
+  .eaf-head h2 {
+    font-size: 3.2rem;
+  }
+  .eaf-head h3 {
+    font-size: 2rem;
+    padding: 0.6rem 0rem;
+  }
+  .eafhm {
+    width: 100%;
+    padding: 1rem 3rem;
+  }
+  .eafhm-text h2 {
+    margin-bottom: 2rem;
+  }
+  .eafhm-text h2 a {
+    font-size: 2.4rem;
+    padding: 2rem 0rem;
+  }
+  .eafhm-text p {
+    padding: 0rem;
+    text-align: start;
+  }
+  .eafhm-text h4 {
+    padding: 2rem 3rem;
+  }
+  .eafhm-text h4 a {
+    color: #331714;
+  }
+  footer .text1,
+  footer .text2,
+  footer .text3,
+  footer .text4,
+  footer .text5 {
+    text-align: center;
+  }
+  footer .text1 h3,
+  footer .text2 h3,
+  footer .text3 h3,
+  footer .text4 h3,
+  footer .text5 h3 {
+    font-size: 2rem;
+  }
+  footer .text1 li a,
+  footer .text2 li a,
+  footer .text3 li a,
+  footer .text4 li a,
+  footer .text5 li a {
+    font-size: 1.8rem;
+  }
+  .icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  .icons img {
+    padding: 0rem 2rem;
+  }
+  .terms {
+    text-align: center;
+  }
+  .terms h4 {
+    font-size: 1.8rem;
+  }
+  .terms h4 a {
+    font-size: 1.6rem;
+  }
+  @keyframes cloudAnimate {
+    from {
+      transform: translate(40%, -42%);
+    }
+    to {
+      transform: translate(0%, 0%);
+    }
+  }
+}/*# sourceMappingURL=styles.css.map */

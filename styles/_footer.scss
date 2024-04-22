@@ -1,0 +1,98 @@
+.footer {
+    background: $secondary;
+    padding: 2rem 4rem;
+    align-items: center;
+    color: $white;
+    font-size: calc(1rem + 1vw);
+    @include flex(start, center, row);
+    flex-wrap: wrap;
+}
+.footer a {
+    text-decoration: none;
+    color: $white;
+}
+.footer a:hover {
+    color: $primary;
+
+}
+.footer div {
+    margin: 0.5rem 1.8rem;
+    text-align: start;
+}
+footer h3 {
+    color: $primary;
+    font-size: $header3;
+    padding: 2rem 0rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-thickness: 0.3rem;
+    text-decoration-color: $secondary;
+}
+footer .text1 {
+    flex: 2 1 35rem;
+    margin-top: 1rem;
+    line-height: 3.8rem;
+    @include flex(center, center, column);
+    text-align: center;
+}
+footer .text2 {
+    flex: 1 1 35rem;
+    margin-top: 1rem;
+    line-height: 3.8rem;
+    text-align: center;
+}
+ 
+footer .text3 {
+    flex: 1 1 35rem;
+    margin-top: 1rem;
+    line-height: 3.8rem;
+    text-align: center;
+}
+
+.text2 li {
+    transition: transform 3s linear;
+}
+
+.text2 li:hover {
+    transform: scale(1.2);
+}
+
+.text3 li {
+    transition: transform 3s linear;
+}
+
+.text3 li:hover {
+    cursor: pointer;
+    transform: scale(1.2s);
+}
+
+footer .text1 img {
+    top: 0;
+    width: 30%;
+    height: 30%;
+    margin: 2rem;
+}
+
+// Footer Section
+.terms {
+    min-height: 10vh;
+    background: $black;
+    color: $primary;
+    padding: 1rem 5rem;
+    @include flex(center, center, row);
+    flex-wrap: wrap;
+}
+.terms a {
+    color: $primary;
+    text-decoration: none;
+}
+.foot1 {
+    flex: 1 1 40rem;
+    margin: 1rem 0rem;
+    
+}
+
+.foot2 {
+    flex: 1 1 40rem
+    
+}
