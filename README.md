@@ -9,3 +9,7 @@ Main Index page, About us page.
 
 ## Current active working page 
 I am working on contact us page. I need to complete this page before I move to the next.
+
+## Last Pages 
+Last page which are equally less effective on main landing page SEO should be program / Itenerary pages. 
+They also have a lot of content than any other page.
