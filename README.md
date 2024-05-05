@@ -1,6 +1,7 @@
-# Royalpaw-Safaris
-Running 2024 updates for Royalpaw Safaris to improve on SEO content.
+# Royalpaw Safaris
+Website SEO updates 2024. 
 
-## Editing started on 21st April 2024 after AWS Community Day, Kenya. 
-I am happy to start improving this website content from scrach to advanced. 
-Target impactful site is 3 Months time.
+## Editing started on 21st April 2024. 
+I am planning to work on all the pages content optimizing for the SEO.
+
+## 
