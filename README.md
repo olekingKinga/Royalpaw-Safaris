@@ -8,7 +8,7 @@ I am planning to work on all the pages content optimizing for the SEO.
 Main Index page, About us page. 
 
 ## Current active working page 
-I am working on contact us page. I need to complete this page before I move to the next.
+I am working on contact us page. Work and complete these pages b4 moving to program pages.
 
 ## Last Pages 
 Last page which are equally less effective on main landing page SEO should be program / Itenerary pages. 
