@@ -47,6 +47,7 @@
                 <li class="dropdown">
                     <button class="dropbtn">Destinations</button>
                     <ul class="dropdown-content">
+                        <li><a href="../2026-special-programs/">2026 Special Programs</a></li>
                         <li><a href="./kenya-tanzania/">Kenya Tanzania Expenditions</a></li>
                         <li><a href="./ea-family-safaris">East Africa Family Safaris</a></li>   
                     </ul>
@@ -190,9 +191,9 @@
     <div class="text2">
         <h3>Get Social</h3>
         <ul>
+            <li><a href="https://www.tripadvisor.com/UserReviewEdit-g294207-d24113128-Royal_Paw_Safaris-Nairobi.html" target="_blank">Trip Advisor Reviews.</a></li>
             <li><a href="https://www.facebook.com/royalpawsafarisKE/" target="_blank">Visit us on Facebook.</a></li>
             <li><a href="https://www.facebook.com/royalpawsafarisKE/" target="_blank">View @Twitter Feed.</a></li>
-            <li><a href="https://www.tripadvisor.com/UserReviewEdit-g294207-d24113128-Royal_Paw_Safaris-Nairobi.html" target="_blank">Trip Advisor Reviews.</a></li>
             <li><a href="https://instagram.com/royalpawsafariske?igshid=MTJneHFoN2QxdWZlcA==" target="_blank">Follow Our Instagram Page.</a></li>
         </ul>
     </div>
@@ -200,8 +201,7 @@
     <div class="text3">
         <h3>Contact</h3>
         <ul>
-            <li>Phone Number: +254 745 323 472</li>
-            <li>Phone Number: +254 722 165 462</li>
+            <li>Phone Number: +254 741 616 681</li>
             <li>Email Address: info@royalpawsafaris.com</li>
             <li><a href="/contact/">Contact Us Form.</a></li>
         </ul>
@@ -215,9 +215,12 @@
         </div>
 
         <div class="foot2">
-            <h4>&COPY; 2026 | Royal Paw Safaris | Powered by <a href="mailto:olekingkinga@gmail.com">Zion Cloud Technologies</a></h4>
+            <h4>&COPY; <span id="year"></span> | Royal Paw Safaris | Powered by <a href="mailto:olekingkinga@gmail.com">Zion Cloud Technologies.</a></h4>
         </div>
    </section>   
     <script src="./js/app.js"></script>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
